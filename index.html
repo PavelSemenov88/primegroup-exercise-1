@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login__img"></div>
+      <div class="login__form form">
+        <form class="form__login">
+          <div class="form__login-title">Login to your account</div>
+          <div class="form__login-email">
+            <div class="email__title title">Email</div>
+            <input
+              type="email"
+              name=""
+              class="email__input input"
+              placeholder="Введите email"
+              maxlength="30"
+            />
+            <div class="email__error1 error">
+              Поле обязательно для заполнения
+            </div>
+            <div class="email__error2 error">Email невалидный</div>
+          </div>
+          <div class="form__login-pass pass">
+            <div class="pass__title title">Password</div>
+            <input
+              type="password"
+              name=""
+              class="pass__input input"
+              placeholder="Введите пароль"
+              maxlength="30"
+            />
+            <div class="pass__error1 error">
+              Поле обязательно для заполнения
+            </div>
+            <div class="pass__error2 error">
+              Пароль должен содержать как минимум 6 символов
+            </div>
+          </div>
+
+          <div class="checkbox-forgot">
+            <div class="form__login-checkbox checkbox">
+              <input
+                type="radio"
+                name=""
+                class="checkbox__input"
+                id="checkbox"
+              />
+              <label for="checkbox" class="checkbox__label">Remember me </label>
+              <div class="checkbox__error error">
+                Поле обязательно для заполнения
+              </div>
+            </div>
+            <div class="forgot__pass">
+              <a href="" class="forgot__pass-text">Forgot password?</a>
+            </div>
+          </div>
+          <button class="button__login button">Login now</button>
+          <button class="button__google-login button" type="submit">
+            <img class="button__icon" src="./img/icon-google.svg" alt="" />
+            <span>Or sign-in with google</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
